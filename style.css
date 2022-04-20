@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.7rem;
+    font-style: 'century gothic';
+    background-color: #edf2f8;
+    color: #ffffff;
+    
+
+    
+}
+.container{
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 15px;
+    max-width: 1300px;
+}
+.card{
+    padding: 15px;
+    border-radius: 15px;
+    
+    
+}
+.header {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.header p{
+    opacity: 50%;
+}
+
+
+
+.first__card{
+    background-color: #7541c8;
+    grid-column: 1/ 3;
+}
+
+.second__card{
+    background-color: #475468;
+}
+
+.thrid__card{
+    background-color: blue;
+    grid-row: 1/ 3;
+    grid-column: 4;
+}
+
+.next__card{
+    background-color: darkmagenta;
+}
+
+.wow__card{
+    background-color: brown;
+    grid-column: 2/ 4;
+}
+
+.card__comment{
+    font-size: 1.1rem;
+    opacity: 70%;
+
+}
+
+.card__exprience{
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .first__card{
+        background-color: #7541c8;
+        grid-column: 1/ 2;
+    }
+    
+    .second__card{
+        background-color: #475468;
+    }
+    
+    .thrid__card{
+        background-color: blue;
+        grid-column: 1 /2;
+        grid-row: 2/ 3;
+    }
+    
+    .next__card{
+        background-color: darkmagenta;
+    }
+    
+    .wow__card{
+        background-color: brown;
+        grid-row: 5;
+        grid-column: 1 / 2;
+    }
+    
+}
+
+
+     @media (max-width: 800px) { 
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .first__card{
+        background-color: #7541c8;
+        grid-column: 1/ 2;
+    }
+    
+    .second__card{
+        background-color: #475468;
+        grid-row: 4/ 5;
+        grid-column: 1/ 2;
+    }
+    
+    .thrid__card{
+        background-color: blue;
+        grid-column: 1 /2;
+        grid-row: 3/ 4;
+    }
+    
+    .next__card{
+        background-color: darkmagenta;
+        grid-row: 2/ 3;
+        grid-column: 1/ 2;
+    }
+
+    
+    .wow__card{
+        background-color: brown;
+        grid-row: 5;
+        grid-column: 1 / 2;
+    }
+    
+} 
